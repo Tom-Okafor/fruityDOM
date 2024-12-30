@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Rubik+Bubbles&family=Unkempt:wght@400;700&display=swap');
+
+
+:root {
+  --white: #ffffff;
+  --dark-yellow: #e4a900;
+  --yellow: #FED52F;
+  --bgColor: #d4afa6;
+  --bgColor1: #EBD4F0;
+  --pawpaw-orange: #EDA215;
+  --light-green: #81c784;
+  --deep-green: #2e7d32;
+  --bg-green: #7cb342;
+  --font-rubik: "Rubik Bubbles", serif;
+  --font-unkempt: "Unkempt",
+    serif;
+  --font-asul: "Asul",
+    serif;
+}
+
+body {
+  font-family: var(--font-asul);
+}
