@@ -1,7 +1,11 @@
 import Heading from "./Heading";
 
 function Hero() {
-return  <Heading />;
+  return (
+    <div className="hero">
+      <Heading />
+    </div>
+  );
 }
 
 export default Hero;
