@@ -124,6 +124,75 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
+    position: relative;
+  }
+
+  .hero .ball {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+    -webkit-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+    -moz-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+    -ms-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+    -o-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+    mix-blend-mode: difference;
+    right: 0%;
+    top: 0;
+    opacity: 0.6;
+    filter: blur(45px);
+    -webkit-filter: blur(45px);
+    animation: moveBall 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+    -webkit-animation: moveBall 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+}
+
+  .hero .ball:nth-of-type(4) {
+    border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+    -webkit-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+    -moz-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+    -ms-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+    -o-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+    left: 12%;
+    top: -87px;
+    animation: moveBall2 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+    -webkit-animation: moveBall2 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+  }
+
+  .hero .ball:nth-of-type(5) {
+    background-image: url('../public/assets/img3.png');
+    top: -150px;
+    left: 0;
+    filter: none;
+    -webkit-filter: none;
+    opacity: 1;
+    animation: none;
+    -webkit-animation: none;
+    mix-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(90deg) translateX(100px);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+
+  
+
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes moveBall {
+      to {
+        right: 685px;
+        bottom: 0;
+      }
+    }
+
+    @keyframes moveBall2 {
+      to {
+        left: 800px;
+        bottom: 10px;
+      }
+    }
   }
 
   .heading p {
@@ -131,6 +200,10 @@ h2 {
     word-spacing: 3px;
     letter-spacing: 1.3px;
     max-width: 45ch;
+  }
+
+  .span{
+    font-family: var(--font-rubik);
   }
 
 }
