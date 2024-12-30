@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Heading from "./Heading";
+import Hero from "./Hero/Hero";
 
 function App() {
   return (
     <>
-      <Heading />
+      <Hero />
     </>
   );
 }

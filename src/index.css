@@ -16,8 +16,32 @@
     serif;
   --font-asul: "Asul",
     serif;
+
 }
 
 body {
   font-family: var(--font-asul);
+  padding: clamp(5vw, )
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--font-rubik);
+  letter-spacing: 5px;
+  color: var(--deep-green)
+}
+
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 60px;
+    letter-spacing: 7px;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 90px;
+  }
 }
