@@ -28,8 +28,12 @@
 
 body {
   font-family: var(--font-asul);
-  padding-inline: 7.5vw;
   padding-block: 7vh;
+}
+
+.hero,
+section {
+  padding-inline: 7.5vw;
 }
 
 h1 {
@@ -153,6 +157,7 @@ section {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
+  padding-block: 1.5rem;
 }
 
 section h2 {
@@ -183,16 +188,33 @@ section article p {
 
 section:nth-of-type(2) h2 {
   color: var(--pawpaw-orange);
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 4px;
+
   text-shadow: 2px 5px 3px var(--bgColor);
-  font-size: 1.7rem;
 }
 
 section:nth-of-type(2) img {
   filter: drop-shadow(2px 2px 80px var(--yellow));
   -webkit-filter: drop-shadow(2px 2px 80px var(--yellow));
+}
+
+section:nth-of-type(3) img {
+  filter: drop-shadow(2px 2px 10px var(--white));
+  -webkit-filter: drop-shadow(2px 2px 10px var(--white));
+}
+
+section:nth-of-type(3) {
+  background-color: var(--bgColor);
+}
+
+section:nth-of-type(3) article p {
+  color: var(--white);
+  text-shadow: 1px 1px var(--bgColor1);
+}
+
+section:nth-of-type(3) h2 {
+  color: var(--yellow);
+
+  text-shadow: 2px 5px 8px var(--deep-green);
 }
 
 @media (prefers-reduced-motion: no-preference) {

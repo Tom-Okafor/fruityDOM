@@ -8,3 +8,9 @@ export const SECTION_TWO_PARAGRAPHS = [
   "Think of fruities as nature's tasty medicine. An apple a day might just keep the doctor away, and citrus fruities like oranges and grapefruits are bursting with vitamin C to keep colds at bay. Bananas, with their potassium punch, can help regulate blood pressure, while berries are known to improve brain function.",
   "So, next time you reach for a snack, remember that those colorful, juicy fruities aren’t just delicious—they're lifesavers, one bite at a time! 🍎🍌🍇",
 ];
+
+export const SECTION_THREE_PARAGRAPHS = [
+  "Start your day with a berry-banana smoothie and a splash of orange juice for an energizing boost. Add sliced apples or pears to your lunch salad for a sweet touch that pairs perfectly with savory ingredients. For a snack, try a combo of grapes and cheese or apple slices with almond butter.",
+  "Grilled fruits like pineapple or peaches can enhance your dinner dishes, pairing well with chicken or fish. For dessert, enjoy mixed berries topped with yogurt and granola, or a simple fruit salad with a squeeze of lime juice.",
+  "Stay hydrated with fruit-infused water by adding slices of citrus fruits, berries, or cucumber. Experiment with different fruit combinations to add flavor and health benefits to your meals.",
+];
