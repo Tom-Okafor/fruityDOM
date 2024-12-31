@@ -2,10 +2,10 @@ import HeadText from "../Headtext";
 import Paragraph from "../Hero/Paragraph";
 import PropTypes from "prop-types";
 
-function TextBlock({ sectionParagraph }) {
+function TextBlock({ sectionParagraph, text }) {
   return (
     <article>
-      <HeadText text="did you know?" />
+      <HeadText text={text} />
       {sectionParagraph.map((paragraph, index) => (
         <Paragraph key={index} words={paragraph} />
       ))}
@@ -17,4 +17,5 @@ export default TextBlock;
 
 TextBlock.propTypes = {
   sectionParagraph: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  text: PropTypes.string.isRequired,
 };
