@@ -7,6 +7,7 @@ const {
   SECTION_THREE_PARAGRAPHS,
   SECTION_FOUR_PARAGRAPHS,
   SECTION_FIVE_PARAGRAPHS,
+  SECTION_SIX_PARAGRAPHS,
 } = paragraphs;
 
 export default function AllSections() {
@@ -26,7 +27,7 @@ export default function AllSections() {
       />
       <Section
         source="assets/img10.png"
-        altText="A glass of orange juice."
+        altText="A glass of lemonade juice."
         sectionParagraph={SECTION_THREE_PARAGRAPHS}
         text="fruity tips"
       />
@@ -41,6 +42,12 @@ export default function AllSections() {
         altText="A cherry"
         sectionParagraph={SECTION_FIVE_PARAGRAPHS}
         text="trust me, you need fruities"
+      />
+      <Section
+        source="assets/mango.png"
+        altText="A sliced mango"
+        sectionParagraph={SECTION_SIX_PARAGRAPHS}
+        text="handling fruity allergies"
       />
     </>
   );

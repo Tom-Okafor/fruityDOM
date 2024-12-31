@@ -22,7 +22,12 @@ export const SECTION_FOUR_PARAGRAPHS = [
 ];
 
 export const SECTION_FIVE_PARAGRAPHS = [
-  "Ignoring fruities in your diet can lead to serious health consequences. Without the essential vitamins, minerals, and antioxidants found in fruities, you're at a higher risk for nutrient deficiencies, chronic diseases, and even a shorter lifespan. Studies have shown that people who don't eat fruities are more likely to suffer from heart disease, diabetes, and certain cancers.",
-  "On the flip side, those who regularly enjoy fruities have a lower risk of these conditions and tend to live longer. For instance, research indicates that individuals who consume at least five servings of fruities and vegetables daily have a 13% lower risk of death compared to those who eat fewer than three servings. Plus, fruity lovers can enjoy an average of 19 months longer life expectancy than those who skip fruities altogether.",
+  "Ignoring fruities in your diet can lead to serious health consequences. Without the essential vitamins, minerals, and antioxidants found in fruities, you're at a higher risk for nutrient deficiencies, chronic diseases, and even a shorter lifespan.",
+  "On the flip side, those who regularly enjoy fruities have a lower risk of these conditions and tend to live longer. For instance, research indicates that individuals who consume at least five servings of fruities and vegetables daily have a 13% lower risk of death compared to those who eat fewer than three servings.",
   "So, trust me, adding fruities to your diet isn't just a tasty choice—it's a life-saving one!",
+];
+export const SECTION_SIX_PARAGRAPHS = [
+  "Handling fruity allergies might sound like a battle, but with the right strategies, you can emerge victorious. First off, know your foes. If apples or cherries make your taste buds tingle in a not-so-fun way, it's best to dodge them. Knowing which fruities are your kryptonite is the first step to avoiding them.",
+  "Cooking your fruities is like giving them a mild makeover. It breaks down the troublesome proteins, making them safe for you to enjoy. Always be a label detective—sneaky fruities can hide in juices and snacks, just waiting to pounce.",
+  "Finally, think of an epinephrine auto-injector as your trusty sidekick, ready to save the day if things go south. Let your friends and family know about your allergies, so they can help keep you safe. With these tips, you can enjoy a healthy diet without fear.",
 ];
