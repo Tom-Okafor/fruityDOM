@@ -11,12 +11,18 @@ export const SECTION_TWO_PARAGRAPHS = [
 
 export const SECTION_THREE_PARAGRAPHS = [
   "Start your day with a berry-banana smoothie and a splash of orange juice for an energizing boost. Add sliced apples or pears to your lunch salad for a sweet touch that pairs perfectly with savory ingredients. For a snack, try a combo of grapes and cheese or apple slices with almond butter.",
-  "Grilled fruits like pineapple or peaches can enhance your dinner dishes, pairing well with chicken or fish. For dessert, enjoy mixed berries topped with yogurt and granola, or a simple fruit salad with a squeeze of lime juice.",
-  "Stay hydrated with fruit-infused water by adding slices of citrus fruits, berries, or cucumber. Experiment with different fruit combinations to add flavor and health benefits to your meals.",
+  "Grilled fruities like pineapple or peaches can enhance your dinner dishes, pairing well with chicken or fish. For dessert, enjoy mixed berries topped with yogurt and granola, or a simple fruity salad with a squeeze of lime juice.",
+  "Stay hydrated with fruit-infused water by adding slices of citrus fruities, berries, or cucumber. Experiment with different fruity combinations to add flavor and health benefits to your meals.",
 ];
 
 export const SECTION_FOUR_PARAGRAPHS = [
-  "Fruits are your all-day, every-day superfood. Start your morning with a refreshing fruit smoothie or add berries to your cereal for an energizing boost. For lunch, mix in some sliced apples or grapes with your salad for a sweet and crunchy twist.",
-  "In the afternoon, grab a banana or a handful of berries for a quick and healthy snack to keep you going strong. Dinner can also get a fruity upgrade—try grilling pineapple or peaches to accompany your main dish. And for dessert, indulge in a fruit salad or yogurt topped with fresh fruits.",
-  "From breakfast to dinner and every snack in between, fruits are the versatile, delicious choice for any meal, any time of the day. Embrace the fruity lifestyle and enjoy the health benefits and tasty flavors!",
+  "Fruities are your all-day, every-day superfood. Start your morning with a refreshing fruity smoothie or add berries to your cereal for an energizing boost. For lunch, mix in some sliced apples or grapes with your salad for a sweet and crunchy twist.",
+  "In the afternoon, grab a banana or a handful of berries for a quick and healthy snack to keep you going strong. Dinner can also get a fruity upgrade—try grilling pineapple or peaches to accompany your main dish. And for dessert, indulge in a fruity salad or yogurt topped with fresh fruities.",
+  "From breakfast to dinner and every snack in between, fruities are the versatile, delicious choice for any meal, any time of the day. Embrace the fruity lifestyle and enjoy the health benefits and tasty flavors!",
+];
+
+export const SECTION_FIVE_PARAGRAPHS = [
+  "Ignoring fruities in your diet can lead to serious health consequences. Without the essential vitamins, minerals, and antioxidants found in fruities, you're at a higher risk for nutrient deficiencies, chronic diseases, and even a shorter lifespan. Studies have shown that people who don't eat fruities are more likely to suffer from heart disease, diabetes, and certain cancers.",
+  "On the flip side, those who regularly enjoy fruities have a lower risk of these conditions and tend to live longer. For instance, research indicates that individuals who consume at least five servings of fruities and vegetables daily have a 13% lower risk of death compared to those who eat fewer than three servings. Plus, fruity lovers can enjoy an average of 19 months longer life expectancy than those who skip fruities altogether.",
+  "So, trust me, adding fruities to your diet isn't just a tasty choice—it's a life-saving one!",
 ];

@@ -6,6 +6,7 @@ const {
   SECTION_TWO_PARAGRAPHS,
   SECTION_THREE_PARAGRAPHS,
   SECTION_FOUR_PARAGRAPHS,
+  SECTION_FIVE_PARAGRAPHS,
 } = paragraphs;
 
 export default function AllSections() {
@@ -34,6 +35,12 @@ export default function AllSections() {
         altText="A peeled open banana."
         sectionParagraph={SECTION_FOUR_PARAGRAPHS}
         text="fruities! fruities! everytime, everyday!"
+      />
+      <Section
+        source="assets/cherry.png"
+        altText="A cherry"
+        sectionParagraph={SECTION_FIVE_PARAGRAPHS}
+        text="trust me, you need fruities"
       />
     </>
   );
