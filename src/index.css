@@ -33,15 +33,16 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: var(--font-rubik);
   letter-spacing: 5px;
   color: var(--deep-green);
   text-transform: uppercase;
+  line-height: 50px;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-bottom: 1rem;
   letter-spacing: 1.5px;
   word-spacing: 3px;
@@ -49,12 +50,13 @@ h2 {
   font-family: var(--font-unkempt);
 }
 
-.heroGrid {
+.heading {
   width: 80vw;
+
 }
 
 .heading p {
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   font-size: 0.9rem;
   word-spacing: 3px;
   letter-spacing: 1.3px;
@@ -64,26 +66,141 @@ h2 {
   text-shadow: 0 1px 0px var(--deep-green);
 }
 
+.heroGrid {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 20px;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.heroGrid img {
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.heroGrid img:last-child {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.hero .ball {
+  height: clamp(200px, 40vw, 450px);
+  width: clamp(200px, 40vw, 450px);
+  position: absolute;
+  border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+  -webkit-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+  -moz-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+  -ms-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+  -o-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
+  mix-blend-mode: difference;
+  right: 0%;
+  top: 0;
+  opacity: 0.6;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  animation: moveBall 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+  -webkit-animation: moveBall 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+}
+
+.hero .ball:nth-of-type(4) {
+  border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+  -webkit-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+  -moz-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+  -ms-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+  -o-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
+  left: 12%;
+  top: -87px;
+  animation: moveBall2 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+  -webkit-animation: moveBall2 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+}
+
+.hero .ball:nth-of-type(5) {
+  background-image: url('/assets/img3.png');
+  top: -190px;
+  left: 0;
+  filter: none;
+  -webkit-filter: none;
+  opacity: 1;
+  animation: none;
+  -webkit-animation: none;
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(90deg) translateX(100px);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes moveBall {
+    to {
+      right: 60%;
+      top: 40%;
+    }
+  }
+
+  @keyframes moveBall2 {
+    to {
+      left: 60%;
+      top: 40%;
+    }
+  }
+}
+
+
+
 
 @media only screen and (min-width: 576px) {
   h1 {
-    font-size: 55px;
+    font-size: 60px;
     letter-spacing: 7px;
+    line-height: 80px;
   }
 
   h2 {
     font-size: 2rem;
   }
+
+  .heroGrid {
+    width: 60vw;
+  }
 }
 
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   h1 {
-    font-size: 85px;
-    line-height: 120px;
+    font-size: 70px;
+    letter-spacing: 7px;
+    line-height: 85px;
+  }
+
+  .heading p {
+    max-width: 55ch;
+    font-size: 1rem;
+  }
+
+  .heroGrid {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 65px;
+    line-height: 90px;
   }
 
   h2 {
@@ -102,17 +219,10 @@ h2 {
 
   .heroGrid {
     width: 35vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 1fr 20px;
-    gap: 1rem;
+    margin-top: 0;
   }
 
-  .heroGrid img {
-    width: 100%;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
+
 
   .heroGrid img:last-child {
     grid-column: 2 / 3;
@@ -120,80 +230,22 @@ h2 {
   }
 
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
-    position: relative;
+    flex-direction: row;
   }
 
-  .hero .ball {
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
-    -webkit-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
-    -moz-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
-    -ms-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
-    -o-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
-    mix-blend-mode: difference;
-    right: 0%;
-    top: 0;
-    opacity: 0.6;
-    filter: blur(45px);
-    -webkit-filter: blur(45px);
-    animation: moveBall 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
-    -webkit-animation: moveBall 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
 }
 
-  .hero .ball:nth-of-type(4) {
-    border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
-    -webkit-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
-    -moz-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
-    -ms-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
-    -o-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
-    left: 12%;
-    top: -87px;
-    animation: moveBall2 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
-    -webkit-animation: moveBall2 25s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 80px;
+    line-height: 120px;
   }
 
-  .hero .ball:nth-of-type(5) {
-    background-image: url('../public/assets/img3.png');
-    top: -150px;
-    left: 0;
-    filter: none;
-    -webkit-filter: none;
-    opacity: 1;
-    animation: none;
-    -webkit-animation: none;
-    mix-blend-mode: normal;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(90deg) translateX(100px);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+
+  .heading {
+    width: 40vw;
   }
 
-  
-
-  @media (prefers-reduced-motion: no-preference) {
-    @keyframes moveBall {
-      to {
-        right: 685px;
-        bottom: 0;
-      }
-    }
-
-    @keyframes moveBall2 {
-      to {
-        left: 800px;
-        bottom: 10px;
-      }
-    }
-  }
 
   .heading p {
     font-size: 1rem;
@@ -202,7 +254,7 @@ h2 {
     max-width: 45ch;
   }
 
-  .span{
+  .span {
     font-family: var(--font-rubik);
   }
 
