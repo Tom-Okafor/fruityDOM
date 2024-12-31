@@ -5,6 +5,6 @@ function HeadText({ text }) {
 }
 
 HeadText.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
 export default HeadText;

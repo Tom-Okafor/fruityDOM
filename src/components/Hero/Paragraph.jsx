@@ -5,5 +5,5 @@ export default function Paragraph({ words }) {
 }
 
 Paragraph.propTypes = {
-  words: PropTypes.string.isRequired,
+  words: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };

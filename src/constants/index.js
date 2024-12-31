@@ -1,0 +1,4 @@
+export const SECTION_ONE_PARAGRAPHS = [
+  "Eating fruities is like giving your body a high-five from the inside! These colorful wonders are jam-packed with vitamins, minerals, fiber, and antioxidants that do everything from boosting your immune system to making your skin glow like a supernova. Want to feel more energized? Munch on a banana or bite into an apple. It’s like nature’s very own energy drink, but without the crash.",
+  "And let’s not forget the fun part—fruities come in all shapes, sizes, and flavors. Whether you're in the mood for something sweet, tart, juicy, or crunchy, there's a fruity out there waiting to make your taste buds dance. So, next time you’re looking for a snack, ditch the chips and grab some grapes. Your body will thank you, and you might just feel like the healthiest (and happiest) person in the room!",
+];

@@ -93,11 +93,12 @@ h2 {
   align-items: center;
   margin-top: 3rem;
   position: relative;
+
 }
 
 .hero .ball {
-  height: clamp(200px, 40vw, 450px);
-  width: clamp(200px, 40vw, 450px);
+  height: clamp(100px, 30vw, 450px);
+  width: clamp(100px, 30vw, 450px);
   position: absolute;
   border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
   -webkit-border-radius: 54% 46% 48% 52% / 40% 30% 70% 60%;
@@ -107,11 +108,11 @@ h2 {
   mix-blend-mode: difference;
   right: 0%;
   top: 0;
-  opacity: 0.6;
+  opacity: 0.4;
   filter: blur(50px);
   -webkit-filter: blur(50px);
-  animation: moveBall 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
-  -webkit-animation: moveBall 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+  animation: moveBall 20s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+  -webkit-animation: moveBall 20s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
 }
 
 .hero .ball:nth-of-type(4) {
@@ -122,8 +123,8 @@ h2 {
   -o-border-radius: 32% 68% 41% 59% / 38% 29% 71% 62%;
   left: 12%;
   top: -87px;
-  animation: moveBall2 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
-  -webkit-animation: moveBall2 20s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite alternate;
+  animation: moveBall2 20s ease-in-out infinite alternate;
+  -webkit-animation: moveBall2 20s ease-in-out infinite alternate;
 }
 
 .hero .ball:nth-of-type(5) {
@@ -145,6 +146,39 @@ h2 {
   -o-transform: rotate(45deg);
 }
 
+section {
+  margin-block-start: 7rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section h2 {
+  color: var(--deep-green);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-shadow: 2px 5px 3px var(--pawpaw-orange);
+  font-size: 1.7rem;
+}
+
+section img {
+  width: 70%;
+  filter: drop-shadow(2px 2px 15px var(--deep-green));
+  -webkit-filter: drop-shadow(2px 2px 15px var(--deep-green));
+  margin-top: 1.5rem;
+}
+
+section article p {
+  max-width: 50ch;
+  line-height: 1.7rem;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  color: #888;
+  text-shadow: 1px 1px var(--light-green);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   @keyframes moveBall {
     to {
@@ -155,7 +189,7 @@ h2 {
 
   @keyframes moveBall2 {
     to {
-      left: 60%;
+      left: 50%;
       top: 40%;
     }
   }
@@ -178,6 +212,10 @@ h2 {
   .heroGrid {
     width: 60vw;
   }
+
+  section img {
+    width: 55%
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -195,6 +233,12 @@ h2 {
   .heroGrid {
     width: 50vw;
   }
+
+
+  section article p {
+    max-width: 60ch;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -231,6 +275,27 @@ h2 {
 
   .hero {
     flex-direction: row;
+  }
+
+
+  section {
+    margin-block-start: 9rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section h2 {
+    font-size: 2.2rem;
+  }
+
+  section img {
+    width: 40%;
+  }
+
+  section article p {
+    max-width: 45ch;
   }
 
 }
