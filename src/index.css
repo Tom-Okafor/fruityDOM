@@ -267,7 +267,7 @@ section:nth-of-type(4),
 section:nth-of-type(5) {
   position: -webkit-sticky;
   position: sticky;
-  top: -120px;
+  top: -580px;
   z-index: -1;
 }
 
@@ -584,6 +584,16 @@ section.cardblock .cards {
   }
 
   section:nth-of-type(2),
+  section:nth-of-type(3),
+  section:nth-of-type(4),
+  section:nth-of-type(5) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -150px;
+    z-index: -1;
+  }
+
+  section:nth-of-type(2),
   section:nth-of-type(4),
   section:nth-of-type(6) {
     flex-direction: row;
@@ -600,8 +610,6 @@ section.cardblock .cards {
   .card {
     flex-basis: 40%;
   }
-
-
 }
 
 @media only screen and (min-width: 1200px) {
