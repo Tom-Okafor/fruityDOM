@@ -1,8 +1,3 @@
-# React + Vite
+#MY FIRST REACT SITE YAY!!!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to fruitydom. This playful site reminds us of the beauty and importance of fruits. It also educates us on the impact of fruits on our health. So, friends, have you had a fruit today?
