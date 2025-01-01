@@ -45,7 +45,7 @@ export default function AllSections() {
       />
       <Section
         source="assets/mango.png"
-        altText="A sliced mango"
+        altText="three apples"
         sectionParagraph={SECTION_SIX_PARAGRAPHS}
         text="handling fruity allergies"
       />

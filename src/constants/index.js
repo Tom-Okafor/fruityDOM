@@ -31,3 +31,22 @@ export const SECTION_SIX_PARAGRAPHS = [
   "Cooking your fruities is like giving them a mild makeover. It breaks down the troublesome proteins, making them safe for you to enjoy. Always be a label detective—sneaky fruities can hide in juices and snacks, just waiting to pounce.",
   "Finally, think of an epinephrine auto-injector as your trusty sidekick, ready to save the day if things go south. Let your friends and family know about your allergies, so they can help keep you safe. With these tips, you can enjoy a healthy diet without fear.",
 ];
+
+export const CardBlockText = {
+  avocado:
+    "Avocados are nutrient-dense fruities rich in healthy monounsaturated fats, which are beneficial for heart health. They also provide a good amount of fiber, vitamins (especially vitamin K, C, E, and several B vitamins), and minerals like potassium. Their creamy texture makes them perfect for spreads, salads, and smoothies. Plus, they have antioxidants that can help fight inflammation.",
+  banana:
+    "Bananas are a quick and nutritious snack, rich in potassium, which helps regulate blood pressure. They also provide vitamins C and B6, along with dietary fiber. Bananas support digestion, boost energy levels, and can aid in muscle recovery post-exercise. Their natural sugars make them a perfect ingredient for smoothies, cereals, and baked goods.",
+  watermelon:
+    "Watermelon is a hydrating fruity composed of over 90% water. It's rich in vitamins A and C, as well as antioxidants like lycopene, which supports heart health. Watermelon can improve hydration, promote healthy skin, and aid digestion. Enjoy it fresh, in salads, or as a refreshing juice.",
+  pawpaw:
+    "Pawpaw, or papaya, is a tropical fruity rich in vitamin C, vitamin A, and folate. It contains the enzyme papain, which aids digestion. Pawpaw supports immune function, promotes healthy skin, and can improve digestion. It's delicious when eaten fresh, in smoothies, or as part of a fruity salad.",
+  orange:
+    "Oranges are citrus fruities loaded with vitamin C, essential for immune health. They provide dietary fiber and antioxidants, which help reduce inflammation. Oranges support heart health, improve skin texture, and can lower cholesterol levels. They're perfect as a snack, in salads, or juiced.",
+  dates:
+    "Dates are sweet fruities high in natural sugars, fiber, and essential minerals like potassium, magnesium, and copper. They support digestive health, provide energy, and have antioxidants that can reduce inflammation. Dates are often enjoyed as snacks, in smoothies, or as natural sweeteners in desserts.",
+  pineapple:
+    "Pineapples are tropical fruities packed with vitamin C and manganese. They have bromelain, an enzyme that aids digestion and reduces inflammation. Pineapples can boost immunity, improve digestion, and promote healthy skin. Enjoy them fresh, in juices, or grilled for a delicious treat.",
+  coconut:
+    "Coconuts are nutrient-rich fruits offering hydrating water packed with electrolytes and flesh rich in healthy fats and fiber. They provide essential minerals, antioxidants, and versatile uses in cooking and skincare. Coconuts add tropical flavor and numerous health benefits to your diet.",
+};
