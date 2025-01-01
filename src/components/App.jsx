@@ -1,6 +1,7 @@
 import Hero from "./Hero/Hero";
 import AllSections from "./Section/AllSections";
 import CardBlock from "./CardBlock/CardBlock";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <AllSections />
       <CardBlock />
+      <Footer />
     </>
   );
 }
